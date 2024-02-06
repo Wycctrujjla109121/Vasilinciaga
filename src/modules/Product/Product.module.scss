@@ -1,0 +1,99 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+    cursor: pointer;
+
+    &:hover {
+        .preview__list {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.preview {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__list {
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+
+        transition: .2s;
+
+        opacity: 0;
+        visibility: hidden;
+
+        &:not(.preview__list:has(.preview__item:hover)) {
+            .preview__item:nth-last-child(1) {
+                color: #000;
+            }
+        }
+    }
+
+    &__item {
+        color: rgba(0, 0, 0, 0.30);
+        font-family: "PT Root UI";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+
+        cursor: pointer;
+
+        transition: .3s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+    &__title {
+        color: #000;
+        font-family: "PT Root UI";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__prices {
+        display: flex;
+        column-gap: 6px;
+    }
+
+    &__price {
+        color: rgba(0, 0, 0, 0.30);
+
+        font-family: "PT Root UI";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &_new {
+            color: #000;
+        }
+    }
+}
