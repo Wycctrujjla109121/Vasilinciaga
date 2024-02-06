@@ -1,4 +1,4 @@
-import { Header, Product } from "./modules";
+import { Header } from "./modules";
 import { Collection, Preview } from "./modules/page/main";
 
 import collectionImg from './public/img/collection.png'
