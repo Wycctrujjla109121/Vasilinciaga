@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    max-width: 1920px;
+
+    padding: 30px 20px 40px;
+
+    position: fixed;
+    top: -60px;
+
+    transition: .2s;
+
+    &:hover {
+        top: 0px;
+    }
+
+    &__link {
+        color: #000;
+
+        font-family: "PT Root UI";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
