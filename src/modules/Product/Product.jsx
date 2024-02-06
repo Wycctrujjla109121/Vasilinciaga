@@ -1,24 +1,25 @@
 import React from 'react';
 
-import s from './Product.module.scss'
+import './Product.scss'
 
-export function Product({ img, name, priceOld, priceNew, sizes }) {
+import img from '../../public/img/product.png'
+
+export function Product() {
     return (
-        <div className={s.product}>
-            <div className={s.preview}>
-                <img className={s.preview__img} src={img} alt={name} />
-                <div className={s.preview__list}>
-                    {sizes?.map(i => <p key={i} className={s.preview__item}>{i}</p>)}
+        <div class='product'>
+            <div class='preview'>
+                <img class='preview__img' src={img} alt='Лонгслив Moto' />
+                <div class='preview__list'>
+                    <p class='preview__item'>s-m</p>
+                    <p class='preview__item'>l-xl</p>
                 </div>
             </div>
 
-            <div className={s.info}>
-                <h2 className={s.info__title}>{name}</h2>
-                <div className={s.info__prices}>
-                    {
-                        priceOld && <p className={s.info__price}>{priceOld}</p>
-                    }
-                    <p className={s.info__price + ' ' + s.info__price_new}>{priceNew}</p>
+            <div class='info'>
+                <h2 class='info__title'>Лонгслив Moto</h2>
+                <div class='info__prices'>
+                    <p class='info__price'>5 700 руб.</p>
+                    <p class='info__price info__price_new'>4 200 руб.</p>
                 </div>
             </div>
         </div>
