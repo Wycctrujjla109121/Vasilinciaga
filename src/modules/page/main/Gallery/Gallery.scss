@@ -1,0 +1,59 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    width: 100%;
+    max-width: 1880px;
+
+    &__title {
+        color: #000;
+
+        font-family: "PT Root UI";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 20px;
+    }
+}
+
+.item {
+    width: 100%;
+    max-width: 613px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    text-decoration: none;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        color: #000;
+        font-family: "PT Root UI";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+
+        transition: .2s;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+
+        width: fit-content;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.60);
+        }
+    }
+}

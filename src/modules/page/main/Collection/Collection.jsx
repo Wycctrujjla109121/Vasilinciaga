@@ -27,7 +27,7 @@ export function Collection() {
                     <Product />
                 </div>
 
-                <div class='list'>
+                <div class='collection__list'>
                     <Product />
                     <Product />
                     <Product />
