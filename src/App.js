@@ -7,17 +7,11 @@ function App() {
   return (
     <div className={s.app}>
       <Header />
-      {/* <Preview /> */}
+      <Preview />
       <Collection />
       <Collection />
       <Gallery />
       <Form />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }
