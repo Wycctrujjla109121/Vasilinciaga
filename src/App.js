@@ -1,5 +1,5 @@
 import { Header } from "./modules";
-import { Collection, Gallery, Preview } from "./modules/page/main";
+import { Collection, Form, Gallery, Preview } from "./modules/page/main";
 
 import s from './App.module.scss'
 
@@ -7,10 +7,11 @@ function App() {
   return (
     <div className={s.app}>
       <Header />
-      <Preview />
+      {/* <Preview /> */}
       <Collection />
       <Collection />
       <Gallery />
+      <Form />
       <br />
       <br />
       <br />
