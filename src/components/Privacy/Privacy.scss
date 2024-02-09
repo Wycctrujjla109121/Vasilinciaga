@@ -19,6 +19,8 @@
         border-top: 1px solid rgba(0, 0, 0, 0.30);
         border-bottom: 1px solid rgba(0, 0, 0, 0.30);
 
+        background-color: transparent;
+
         padding: 19px 0px 19px 10px;
 
         color: #000;
@@ -28,8 +30,15 @@
         font-weight: 400;
         line-height: normal;
 
+        transition: .2s;
+
         &::placeholder {
             color: rgba(0, 0, 0, 0.60);
+        }
+
+        &:hover,
+        &:focus {
+            border-color: #000;
         }
     }
 
@@ -47,6 +56,12 @@
         padding: 10px 30px;
 
         cursor: pointer;
+
+        transition: .2s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.80);
+        }
     }
 
     &__link {

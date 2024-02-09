@@ -1,0 +1,167 @@
+.wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    background-color: #F5F5F5;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1562px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__privacy {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        width: 100%;
+        max-width: 614px;
+
+        &_text {
+            color: #000;
+            font-family: "PT Root UI";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+.links {
+    display: flex;
+    column-gap: 60px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__title {
+        color: #000;
+        font-family: "PT Root UI";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: lowercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__link {
+        color: #000;
+
+        font-family: "PT Root UI";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+        text-decoration: none;
+
+        width: fit-content;
+
+        transition: .2s;
+
+        &_uper {
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.60);
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__link {
+        color: #000;
+        font-family: "PT Root UI";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        text-decoration: none;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+        padding-bottom: 2px;
+
+        width: fit-content;
+    }
+
+    &__text {
+        color: rgba(0, 0, 0, 0.60);
+        font-family: "PT Root UI";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    &__text {
+        color: rgba(0, 0, 0, 0.60);
+        font-family: "PT Root UI";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__links {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &__link {
+        color: rgba(0, 0, 0, 0.60);
+        font-family: "PT Root UI";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}
