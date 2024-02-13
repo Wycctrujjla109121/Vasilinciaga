@@ -40,6 +40,11 @@
         &:focus {
             border-color: #000;
         }
+
+        &_error {
+            color: #F00;
+            border-color: #F00 !important;
+        }
     }
 
     &__button {

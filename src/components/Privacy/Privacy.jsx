@@ -6,6 +6,7 @@ export function Privacy() {
     return (
         <form class='privacy'>
             <div class='privacy__info'>
+                {/* privacy__input_error - стиль валидации формы */}
                 <input class='privacy__input' placeholder='Ваша почта' type='email' />
                 <button class='privacy__button' type='submit'>Подписаться</button>
             </div>
