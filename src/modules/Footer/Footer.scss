@@ -118,6 +118,12 @@
         padding-bottom: 2px;
 
         width: fit-content;
+
+        transition: .2s;
+
+        &:hover {
+            border-color: #000;
+        }
     }
 
     &__text {
