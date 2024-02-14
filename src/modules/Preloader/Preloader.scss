@@ -1,0 +1,31 @@
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+
+        border: 3px solid rgba(0, 0, 0, 0.60);
+        border-radius: 50%;
+        border-right-color: transparent;
+
+        animation-name: rotate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}

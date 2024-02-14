@@ -1,4 +1,4 @@
-import { Cookie, Footer, Header, Sorted } from "./modules";
+import { Cookie, Footer, Header, Preloader, ProductList, Sorted } from "./modules";
 import { Collection, Form, Gallery, Preview } from "./modules/page/main";
 
 import s from './App.module.scss'
@@ -19,7 +19,11 @@ function App() {
       Главная страница
       */}
 
-      <Sorted />
+      <div className={s.app__shop}>
+        <Sorted />
+        <ProductList />
+      </div>
+      <Preloader />
     </div>
   );
 }
