@@ -1,0 +1,139 @@
+.sorted {
+    display: flex;
+    column-gap: 30px;
+    width: fit-content;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 13px;
+    }
+
+    &__title {
+        color: rgba(0, 0, 0, 0.60);
+        font-family: "PT Root UI";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+    }
+
+    &__info {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    &__section {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        color: #000;
+        font-family: "PT Root UI";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+
+        text-decoration: none;
+
+        &_red {
+            color: #F00;
+        }
+
+        transition: .2s;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    &__arrow {
+        path {
+            stroke: #000;
+        }
+
+        &_red {
+            path {
+                stroke: #F00;
+            }
+        }
+    }
+
+    &__ruler {
+        color: rgba(0, 0, 0, 0.30);
+        font-family: "PT Root UI";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        width: fit-content;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+
+        transition: .2s;
+
+        cursor: pointer;
+
+        &_radio {
+            display: none;
+
+            &:checked~label {
+                color: #000;
+                border-color: #000;
+            }
+        }
+    }
+
+    &__category {
+        transition: .2s;
+
+        &:hover {
+            opacity: .6;
+        }
+
+        &_label {
+            color: #000;
+            font-family: "PT Root UI";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+
+            display: flex;
+            align-items: baseline;
+            column-gap: 6px;
+
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: inline-block;
+
+                width: 7px;
+                height: 7px;
+
+                border-radius: 50%;
+                border: 1px solid #000;
+
+                transition: .2s;
+            }
+        }
+
+        &_checkbox {
+            display: none;
+
+            &:checked~label {
+                &::before {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}

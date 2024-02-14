@@ -1,4 +1,4 @@
-import { Cookie, Footer, Header } from "./modules";
+import { Cookie, Footer, Header, Sorted } from "./modules";
 import { Collection, Form, Gallery, Preview } from "./modules/page/main";
 
 import s from './App.module.scss'
@@ -6,6 +6,8 @@ import s from './App.module.scss'
 function App() {
   return (
     <div className={s.app}>
+      {/* 
+      Главная страница
       <Header />
       <Preview />
       <Collection />
@@ -13,7 +15,11 @@ function App() {
       <Gallery />
       <Form />
       <Footer />
-      <Cookie />
+      <Cookie /> 
+      Главная страница
+      */}
+
+      <Sorted />
     </div>
   );
 }
