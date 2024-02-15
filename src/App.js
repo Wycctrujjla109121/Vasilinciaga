@@ -15,10 +15,14 @@ function App() {
       <Gallery />
       <Form />
       <Footer />
-      <Cookie /> 
+      <Cookie />
       Главная страница
-      */}
+    */}
 
+      {/* 
+      Страница магазин
+      Страница магазин
+      */}
       <div className={s.app__shop}>
         <Sorted />
         <ProductList />
